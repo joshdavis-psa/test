@@ -1,4 +1,4 @@
-node_vec <- c("Perosnal origins of my most fundamental intuitions",
+node_vec <- c("Personal origins of my most fundamental intuitions",
 "Epistemology",
 "Maths",
 "Computer science",
