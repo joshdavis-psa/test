@@ -35,3 +35,50 @@ edges <- create_edge_df(
 graph <- create_graph(nodes_df = nodes, edges_df = edges)
 
 render_graph(graph)
+
+
+
+library(janitor)
+
+base_path <- "C:/Users/joshs/Downloads/test/Contents"
+
+for (folder in node_vec) {
+  
+  folder_path <- file.path(base_path, folder)
+  script_path <- file.path(
+    folder_path,
+    paste0(make_clean_names(folder), ".R")
+  )
+  
+  dir.create(folder_path, recursive = TRUE, showWarnings = FALSE)
+  
+  if (!file.exists(script_path)) {
+    file.create(script_path)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
