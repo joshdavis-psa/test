@@ -23,8 +23,8 @@ nodes <- create_node_df(
 )
 
 edges <- create_edge_df(
-  from = c(1, 2, 3, 4, 5, 6, 6, 6,  8, 9),
-  to   = c(2, 3, 6, 6, 6, 7, 8, 11, 9, 10)
+  from = c(9,  8, 6,  6, 6, 5, 4, 3, 2, 1),
+  to   = c(10, 9, 11, 8, 7, 6, 6, 6, 3, 2)
 )
 
 graph <- create_graph(nodes_df = nodes, edges_df = edges)
